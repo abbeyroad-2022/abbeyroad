@@ -1,0 +1,17 @@
+html, body{
+  height: 100%;
+}
+
+[data-scroll-content] {
+  padding: 10vw 0;
+}
+
+figure{
+  padding: 10vw 5vw;
+  
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

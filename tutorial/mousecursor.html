@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom cursor</title>
+    <link rel="stylesheet" href="assets/styles/mousecurser.css">
+</head>
+<body>
+    <div class="content">
+        <!-- <div class="years">2022</div> -->
+        <!-- <h1>Abbeyroad</h1> -->
+        <div class="abbey">ABBEYROAD <br> COMPANY <br> PROFILE</div>
+        <!-- <p> maiores culpa magni molestias tenetur eum? Itaque temporibus nobis excepturi cupiditate.</p> -->
+    </div>
+    <!--Cursor Part-->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
+ 
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+    </script>
+</body>
+</html>

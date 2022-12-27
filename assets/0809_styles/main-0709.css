@@ -1,0 +1,430 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #222;
+  /* overflow-x: hidden; */
+}
+
+/*----------------------------------
+  Main
+------------------------------------*/
+
+/* .main {
+   overflow: hidden;
+} */
+
+.section {
+  position: relative;
+}
+section.san-francisco {
+  margin-top: 100px;
+}
+section.seoul {
+  margin-top: 800px;
+}
+.absolute {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+}
+.absolute.above {
+  z-index: 2;
+}
+.absolute h2 {
+  width: 1500px;
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: #e7e7e7;
+  z-index: -1;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.rellax {
+  width: 1100px;
+  font-size: 140px;
+  font-weight: 500;
+  margin-left: -120px;
+  margin-top: 40px;
+  line-height: 140px;
+}
+.nxgram {
+  width: 300px;
+  font-size: 140px;
+  font-weight: 500;
+  margin-left: 240px;
+  margin-top: -100px;
+  line-height: 140px;
+}
+.s-new {
+  width: 200px;
+  font-size: 200px;
+}
+.s-bg {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 400;
+  margin-top: -100px;
+  border-radius: 12px;
+  margin-left: 900px;
+  margin-top: -105px;
+  color: #000000;
+  z-index: 999999;
+}
+.s-list {
+  width: 900px;
+  height: 110px;
+  color:#000000;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-left: -80px;
+  margin-top: 100px;
+}
+.date {
+  width: 900px;
+  height: 900px;
+  line-height: 20px;
+  margin-top: 50px;
+  margin-left: 370px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #030303;
+}
+.temp {
+  width: 900px;
+  height: 1000px;
+  margin-top: -20px;
+  margin-left: -240px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+  color: #3c3c3c;
+}
+.neo {
+  width: 900px;
+  height: 900px;
+  margin-top: -890px;
+  margin-left: -240px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+  color: #3c3c3c;
+}
+.awards-text {
+  width: 700px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 30px;
+  font-weight:500;
+  color: rgb(18, 18, 18);
+  line-height: 100px;
+  letter-spacing: -1px;
+}
+
+/*----------------------------------
+  Medium devices: iPad vertical
+------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+  section.seoul {
+    margin-top: 700px;
+  }
+  .rellax {
+    width: 900px;
+    font-size: 120px;
+    font-weight: 500;
+    margin-left: -50px;
+    line-height: 120px;
+  }
+  .nxgram {
+    width: 100px;
+    font-size: 120px;
+    font-weight: 500;
+    margin-left: 240px;
+    margin-top: -100px;
+    line-height: 140px;
+  }
+  .s-list {
+    width: 600px;
+    height: 110px;
+    color:#000000;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+    border-radius: 12px;
+    margin-left: -0px;
+    margin-top: 70px;
+  }
+  .rolltext{
+    width: 300px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    margin-top:0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .awards-text {
+    width: 900px;
+    font-size: 30px;
+    font-weight:500;
+    color: rgb(0, 0, 0);
+    line-height: 50px;
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section.seoul {
+    margin-top: 550px;
+  }
+  .rellax {
+    width: 800px;
+    font-size: 90px;
+    font-weight: 600;
+    margin-left: 0px;
+    margin-top: 30px;
+    line-height: 90px;
+  }
+  .nxgram {
+    width: 100px;
+    font-size: 90px;
+    font-weight: 500;
+    margin-left: 300px;
+    margin-top: -100px;
+    line-height: 180px;
+  }
+  .s-list {
+    width: 300px;
+    height: 110px;
+    color:#000000;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    border-radius: 12px;
+    margin-left: 50px;
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section.seoul {
+    margin-top: 500px;
+  }
+  .rellax {
+    width: 700px;
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: 0px;
+    margin-top: 0px;
+    line-height: 90px;
+  }
+  .nxgram {
+    width: 100px;
+    font-size: 90px;
+    font-weight: 500;
+    margin-left: 300px;
+    margin-top: -150px;
+    line-height: 180px;
+  }
+  .s-list {
+    width: 300px;
+    height: 110px;
+    color:#000000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    border-radius: 12px;
+    margin-left: 80px;
+    margin-top: 50px;
+  }
+  .awards-text {
+    width: 450px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(23, 23, 23);
+    line-height: 45px;
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  section.seoul {
+    margin-top: 500px;
+  }
+  .rellax {
+    width: 350px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 0px;
+    margin-top: 0px;
+    line-height: 40px;
+  }
+  .nxgram {
+    width: 50px;
+    height: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 140px;
+    margin-top: -150px;
+    line-height: 180px;
+    border: 1px solid red;
+  }
+  .s-list {
+    width: 300px;
+    height: 110px;
+    color:#000000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  .awards-text {
+    width: 350px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(23, 23, 23);
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* =====================options-menu and documentation======================= */
+/* -------------------------------------------------------------------------- */
+h2.heading {
+  font-size: 50px;
+}
+h3.heading {
+  font-size: 27px;
+  font-weight: bolder;
+}
+
+.documentation {
+  margin-top: 8rem;
+}
+.options {
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  width: 90%;
+  padding: 2.5rem;
+  margin-top: 4rem;
+  height: auto;
+}
+.options a {
+  display: block;
+}
+.options-text {
+  font-size: medium;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
+}
+.options-text--margin {
+  margin-top: 3rem;
+}
+.options-title {
+  font-size: 24px;
+  padding: 1rem 0;
+  color: #222;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+/* Style the active class (and buttons on mouse-over) */
+.active {
+  color: #5000f1;
+}
+.option:hover {
+  color: #00f1c9;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fuzz /* Safari and Chrome */ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    /*-webkit-transform: scaleY(1);*/
+    opacity: 1;
+  }
+}
+
+@keyframes fuzz2 /* Safari and Chrome */ {
+  0% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fuzz3 /* Safari and Chrome */ {
+  0% {
+    opacity: 0;
+  }
+  54% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch /* Safari and Chrome */ {
+  0% {
+    -webkit-transform: scaleX(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scaleX(0);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+  }
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+

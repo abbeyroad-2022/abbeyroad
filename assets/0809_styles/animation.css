@@ -1,0 +1,16 @@
+@keyframes show {
+    from{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#el {
+    transition: 1s;
+    animation: show 2s both;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
