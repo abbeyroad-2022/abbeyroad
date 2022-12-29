@@ -77,7 +77,8 @@ class Smooth {
     const velo =+ acc
     const skew = velo * 7.5
     
-    this.dom.content.style.transform = `translate3d(0, -${this.data.rounded}px, 0) skewY(${skew}deg)`
+    //this.dom.content.style.transform = `translate3d(0, -${this.data.rounded}px, 0) skewY(${skew}deg)`
+    this.dom.content.style.transform = `translate3d(0, -${this.data.rounded}px, 0) `
 
     this.requestAnimationFrame()
   }

@@ -1978,6 +1978,7 @@ header.header {
   /* box-shadow: 0 1px 0 rgb(0, 0, 0); */
   /* border: 1px solid red; */
   transition: box-shadow .3s;
+  pointer-events: none;
 }
 /* 로고마진 */
 header.header a.brand {
@@ -1985,6 +1986,7 @@ header.header a.brand {
   position: relative;
   display: block;
   z-index: 6;
+  width: 80px;
 }
 
 /* 로고사이즈 */
@@ -2009,7 +2011,8 @@ header.header a {
 
 /* 메뉴다운시 로고 소셜 정렬 */
 header.header > * {
-  flex: 1;
+  /* flex: 1; */
+  pointer-events: auto;
 }
 /* 소셜메뉴 정렬 */
 header.header > *:last-child {
@@ -2215,12 +2218,13 @@ header.header > *:last-child {
     z-index: 7;
     display: block;
     transition: all .6s;
+    flex-grow: 1;
   }
   /* 메뉴폰트사이즈 */
   body.nav-alt .menu.main {
     font-size: 7vh;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     font-family: 'Nanum Gothic', sans-serif;
     /* color:white; */
   }
@@ -5006,3 +5010,52 @@ div .tahoma {
 
 
 
+
+
+
+/* 221227 추가 */
+.fl { display: flex;}
+.fl-center {justify-content: center; align-items: center;}
+.fl-row-reverse {flex-direction: row-reverse;}
+.rl {position: relative;}
+.w100 { display: block; margin: 0 auto; width: 100%; }
+.t-center {text-align: center;}
+
+.graphic-item.renew:nth-child(1) { background: #3d4234; }
+.graphic-item.renew:nth-child(2) { background: #1b2d3a; }
+.graphic-item.renew:nth-child(3) { background: #3e3d53; }
+
+.video-background {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.last-item {
+  padding-bottom: 140vh;
+}
+.last-item.type2 {
+  padding-bottom: 50vh;
+}
+
+@media screen and (max-width: 850px) {
+  .last-item {
+    padding-bottom: 90vh;
+  }
+}
