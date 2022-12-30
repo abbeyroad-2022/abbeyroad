@@ -1,0 +1,14 @@
+.sub {padding-top: 80px}
+
+.about .title {
+  width: 1024px;
+  margin: 80px auto 0px;
+  font-size: 140px;
+  font-weight: 500;
+  line-height: 140px;
+  color: rgb(40, 40, 40);
+}
+
+.about .title p:nth-child(2) {
+  margin-left: 180px;
+}
