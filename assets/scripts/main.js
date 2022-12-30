@@ -10,35 +10,36 @@ function mainLoaded (){
 
   imagesLoaded( $html , function() {
     console.log('all images are loaded');
-    iframes.forEach((i) => { 
-      i.addEventListener('load', function () {
-        count++;
-        if(count == iframes.length) {
-          console.log("all iframes are loaded")
-          $html.classList.add("loaded")
-        }
-      });
-    });
+    $html.classList.add("loaded")
+    // iframes.forEach((i) => { 
+    //   i.addEventListener('load', function () {
+    //     count++;
+    //     if(count == iframes.length) {
+    //       console.log("all iframes are loaded")
+    //       $html.classList.add("loaded")
+    //     }
+    //   });
+    // });
   });
 }
 
-function navBurger (){
+function headerToggle (){
   let burger = document.querySelector(".burger");
+  let header = document.querySelector(".header");
   let tr = false;
 
   burger.innerHTML = `<hr/><hr/><hr/>`;
   burger.addEventListener("click",function(){
     tr = !tr;
-    console.log(tr)
     if(tr){
-      burger.classList.add("on");
+      header.classList.add("active");
     } else {
-      burger.classList.remove("on");
+      header.classList.remove("active");
     }
 
   })
 }
 
 mainLoaded();
-navBurger();
+headerToggle();
 

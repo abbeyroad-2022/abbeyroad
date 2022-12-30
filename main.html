@@ -31,6 +31,7 @@
       $(document).ready(function() {
           $('#fullpage').fullpage({
             scrollingSpeed: 1000,
+            css3:false
 		        //parallax: true,
           });
         });
@@ -50,9 +51,19 @@
       </a>  
       <div class="burger"></div>
       <div class="nav">
-        
-      
+        <ul class="menu main font-ng">
+          <li class="menu-item"><a class="menu-link smooth" href="pages/about-studio.html">하는 일</a></li>
+          <li class="menu-item"><a class="menu-link smooth" href="pages/portfolio-filters.html">프로젝트</a></li>
+          <li class="menu-item"><a class="menu-link smooth" href="pages/contact.html">문의하기</a></li>
+        </ul>
       </div>
+      <!-- <div class="menu about">
+        <div class="copy">새로운 경험을 그리는</div> 
+        <div class="copy2">New eXperience Gram</div> <br><br>
+        <a class="menu-link anchor-link" href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+        <a class="menu-link anchor-link" href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+        <a class="menu-link anchor-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>       
+      </div> -->
     </header>
     <!-- //Header-->
 
@@ -323,7 +334,7 @@
             </a>
           </div>
           
-          <div class="main-full-img video">
+          <div class="main-full-img video v2">
             <iframe src="https://player.vimeo.com/video/738890488?h=ad3bf98631&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
@@ -336,8 +347,10 @@
       </div>
       
 
-      <!-- section21 -->
-      <div class="section main-full-video" id="section21">
+      <!-- section21 fp-auto-height -->
+      <div class="section main-footer fp-auto-height" id="section21">
+        <div class="div"  style="height: 80vh;">footer</div>
+          
       </div>
     
     </div>

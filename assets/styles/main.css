@@ -89,7 +89,7 @@
 .main-full-txt {
   padding-left: 2rem;
   width: auto;
-  max-width: 550px;
+  max-width: 580px;
   box-sizing: border-box;
 }
 
@@ -110,7 +110,7 @@
 
 .main-full-txt .pc-tit {
   display: block;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.5px;
 }
 
 .main-full-txt .des {
@@ -175,6 +175,12 @@
   z-index: 9;
 }
 
+.main-footer {
+  background: #141414 url('../images/work/display/footer.png') 50% top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 
 /* .main-full-video::after {
   content: "";
@@ -209,6 +215,9 @@
   /* 세로모드 */
   @media (orientation: portrait) {
     .fl-row-reverse {flex-direction: column-reverse;}
+    .main-full-img.video.v2 {
+      padding-top: 35%;
+    }
   }
 
 }
@@ -223,13 +232,17 @@
   .main .section .fl { flex-direction: column; }
   .main-full-txt { padding-left: 0; text-align: center;}
   .main-full-txt .title {margin: 0 0 2%; font-size: 25px;}
-  .main-full-link { position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 110%);}
-  .main-full-img { width: 55%; max-width: 320px; }
-  .main-full-img.big {width: 63%;}
+  .main-full-link { position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 150%);}
+  .main-full-img { width: 52%; max-width: 320px; }
+  .main-full-img.big {width: 58%;}
 
   .main-full-img.video {
     position: relative;
     padding-top: 105%;
+  }
+  .main-full-img.video.v2 {
+    position: relative;
+    padding-top: 75%;
   }
 
   /* .main-full-video iframe {
