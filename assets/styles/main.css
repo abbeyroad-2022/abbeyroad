@@ -29,9 +29,9 @@
 @media screen and (max-width: 600px) {
   .main .po-main-title { 
     padding-bottom: 1rem;
-    font-size: 3.1rem;
-    line-height: 3.2rem;
-    letter-spacing: -0.14rem;
+    font-size: 16vw;
+    line-height: 1.2;
+    letter-spacing: -0.5vw;
   }
 }
 
