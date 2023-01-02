@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
-html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;;}
+html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;}
+* {
+  box-sizing: border-box;
+}
+
+/* common */
+.mb200 {margin-bottom: 200px;}
+.mb300 {margin-bottom: 300px;}
+.mt200 {margin-top: 300px;}
+.pt300 {padding-top: 300px;}
+.font-ng {font-family: "Nanum Gothic", sans-serif;}
+.fl { display: flex;}
+.fl-center {justify-content: center; align-items: center;}
+.fl-row-reverse {flex-direction: row-reverse;}
+.rl {position: relative;}
+.w100 { display: block; margin: 0 auto; width: 100%; }
+.t-center {text-align: center;}
+.ovx-hidden {overflow-x: hidden;}
 
 /* load */
 html:before {
@@ -134,7 +151,7 @@ html.loaded:before, html.loaded:after {
   top: 50%;
   left: 50%;
   transition: all 0.5s ease-in-out;
-  transform: translate(-10%, -50%) scale(0);
+  transform: translate(-10%, -50%) scale(1);
   font-size: 65px;
   font-weight: 600;
 }
@@ -195,18 +212,40 @@ html.loaded:before, html.loaded:after {
   opacity: 1;
 }
 
-/* 221227 추가 */
-.font-ng {font-family: "Nanum Gothic", sans-serif;}
-.fl { display: flex;}
-.fl-center {justify-content: center; align-items: center;}
-.fl-row-reverse {flex-direction: row-reverse;}
-.rl {position: relative;}
-.w100 { display: block; margin: 0 auto; width: 100%; }
-.t-center {text-align: center;}
+/* footer */
+.footer {
+  display: flex; 
+  align-items: center;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  background: #000 url("../images/work/display/footer.png") 50% /cover no-repeat;
+  background-attachment: fixed;
+}
 
-.graphic-item.renew:nth-child(1) { background: #3d4234; }
-.graphic-item.renew:nth-child(2) { background: #1b2d3a; }
-.graphic-item.renew:nth-child(3) { background: #3e3d53; }
+.footer-inner {
+  margin: 0 auto;
+  display: flex; 
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.footer-inner .footer-title {  font-size: 70px; font-weight: bold; }
+.footer-inner .footer-title span { display: block; font-size: 44px; padding: 30px 0 20px; font-weight: 400;}
+.footer-inner .footer-copy {padding-top: 20px;}
+.footer-inner .footer-copy, .footer-inner a { font-size: 22px; color: #fff;}
+.footer-inner .footer-copy span {display: block; opacity: 0.8;}
+
+
+@media screen and (max-width: 1440px) {
+  .footer-inner {padding: 0 40px}
+}
+
+@media screen and (max-width: 767px) {
+  .footer-inner {padding: 0 20px}
+}
 
 .video-background {
   position: relative;
@@ -248,9 +287,14 @@ html.loaded:before, html.loaded:after {
 
 /* 테블릿 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  .footer-inner {text-align: left;}
+  .footer-inner .footer-title {  font-size: 50px; }
+  .footer-inner .footer-title span {  font-size: 34px; }
+  .footer-inner .footer-copy, .footer-inner a { font-size: 18px; }
+  
   /* 가로모드 */
   @media (orientation: landscape) {
-
   }
   /* 세로모드 */
   @media (orientation: portrait) {
@@ -273,7 +317,6 @@ html.loaded:before, html.loaded:after {
       font-size: 20px;
       line-height: 35px;
     }
-
   }
 }
 
@@ -306,5 +349,8 @@ html.loaded:before, html.loaded:after {
     font-size: 20px;
     line-height: 35px;
   }
-
+  .footer {height: 500px; background-size: contain;}
+  .footer-inner .footer-title {  font-size: 24px; }
+  .footer-inner .footer-title span {  font-size: 20px; }
+  .footer-inner .footer-copy, .footer-inner a { font-size: 14px; }
 }

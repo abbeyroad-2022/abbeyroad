@@ -133,7 +133,7 @@
 
 .main-full-link {
   display: inline-block;
-  height: 20px;
+  height: 35px;
   padding: 7px 15px;
   font-size: 16px;
   line-height: 18px;
@@ -176,10 +176,8 @@
   z-index: 4;
 }
 
-.main-footer {
-  background: #141414 url('../images/work/display/footer.png') 50% top no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+.main-footer .footer {
+  height: 100vh;
 }
 
 
@@ -244,6 +242,10 @@
   .main-full-img.video.v2 {
     position: relative;
     padding-top: 75%;
+  }
+  
+  .main-footer .footer {
+    height: 500px;
   }
 
   /* .main-full-video iframe {
