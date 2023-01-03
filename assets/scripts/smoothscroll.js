@@ -44,17 +44,19 @@ class Smooth {
       top: 0,
       left: 0,
       height: '100%',
-      width: '100%',
-      overflow: 'hidden'        
+      width: '100%',       
     })   
   }
 
   setHeight() {
-    document.body.style.height = `${this.dom.content.getBoundingClientRect().height}px`
+    document.body.style.height = `${this.dom.content.getBoundingClientRect().height}px`;
+    document.querySelector(".sub").style.height = `${this.dom.content.getBoundingClientRect().height}px`;
   }
 
   resize() {
-    this.setHeight()
+    setTimeout(function() {
+      this.setHeight()
+    }, timeout);
     this.scroll()
   }
 

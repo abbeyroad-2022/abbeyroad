@@ -6,14 +6,11 @@
     <title>New eXperience Gram</title>
     <meta content="The portfolio page." name="description">
     <!-- Styles-->
-    <link rel="stylesheet" href="../assets/styles/reset.css">
-    <link rel="stylesheet" href="../assets/styles/common.css">
     <!-- <link rel="stylesheet" href="../assets/styles/style.css"> -->
     <!-- <link rel="stylesheet" href="../assets/styles/custom.css"> -->
-    <!-- <link rel="stylesheet" href="../assets/styles/parallax.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/common.css">
     <link rel="stylesheet" href="../assets/styles/sub.css">
-
     <!-- Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
@@ -29,7 +26,6 @@
       <a href="#nav"><span>메뉴 바로가기</span></a> 
       <a href="#content"><span>본문 바로가기</span></a> 
     </div>
-
     <!-- wrapper -->
     <div class="wrapper">
       <!-- Header -->
@@ -53,110 +49,187 @@
         </div>
       </header>
       <!-- //Header-->
-      
       <div class="content portfolio sub" id="content">
         <div data-scroll>
           <div data-scroll-content>
-            <div class="column-12 centered animated-text">
-              <h2>프로젝트를 통한 경험이 <br>가장 큰 자산입니다.</h2>
-            </div>
-            <div class="row portfolio-list" style="margin-top: 10px;">
-              <div class="col-xs-12">
-                  <div class="col-xs-4 text-right" style="line-height: 34px;">Filtering options:</div>
-                  <div class="col-xs-8 text-left">
-                    <button class="btn btn-xl btn-primary sorter" data-filter="*">All</button>
-                    <button class="btn btn-xl btn-primary sorter" data-filter="UX">UX</button>
-                    <button class="btn btn-xl btn-primary sorter" data-filter="BX">BX</button>
-                  </div>
+            
+            <!-- container -->
+            <div class="container">
+
+              <div class="portfolio-title ">
+                <h2 class="animated-text">프로젝트를 통한 경험이 <br>가장 큰 자산입니다.</h2>
               </div>
-              <!-- <hr/>
-              <div class="col-xs-12">
-                <div class="col-xs-4 text-right" style="line-height: 34px;">Ordering options:</div>
-                <div class="col-xs-8 text-left">
-                      <button class="btn btn-xl btn-primary orderer" data-order="asc">ASC</button>
-                      <button class="btn btn-xl btn-primary orderer" data-order="desc">DESC</button>
-                  </div>
+            
+              <ul id="grid-filter">
+                <li data-category="*" class="on">All</li>
+                <li data-category="UX">UX</li>
+                <li data-category="BX">BX</li>
+              </ul>
+
+            <!-- <ul class="grid-filters" data-target="grid" id="grid-filter">
+              <li data-category="*"><a class="button link filter active"  data-category="*">All</a></li>
+              <li data-category=".design"><a class="button link filter" data-category=".design">UX</a></li>
+              <li data-category=".branding"><a class="button link filter" >BX</a></li>
+            </ul> -->
+
+              <div id="masonry-grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="../pages/project-mshop.html">
+                    <img src="../assets/images/work/detail/mshop/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="../pages/project-mobillink.html">
+                    <img src="../assets/images/work/detail/mobillink/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="../pages/project-ocha.html">
+                    <img src="../assets/images/work/detail/ocha/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="../pages/project-144cake.html">
+                    <img src="../assets/images/work/detail/144cake/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="../pages/project-endigo.html">
+                    <img src="../assets/images/work/detail/endigo/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="#">
+                    <img src="../assets/images/work/detail/fredit/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="../pages/project-spacec.html">
+                    <img src="../assets/images/work/detail/spacec/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="../pages/project-6nails.html">
+                    <img src="../assets/images/work/detail/6nails_web/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 BX">
+                  <a class="thumb space-2 animated" href="../pages/project-6nails.html">
+                    <img src="../assets/images/work/detail/6nails/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 BX">
+                  <a class="thumb space-2 animated" href="../pages/project-cyclean.html">
+                    <img src="../assets/images/work/detail/cyclean/th.png"/>
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
                 </div>
               </div>
-              <hr/> -->
-              
-              <ul id="sort-me">
-                  <li class="UX" data-title="M-shop Application" data-order="1" data-link="../pages/project-mshop.html">
-                    <img src="../assets/images/work/detail/mshop/th.png"/>
-                  </li>
-                  <li class="UX" data-title="Mobillink Responsive Web" data-order="2" data-link="../pages/project-mobillink.html">
-                  <img src="../assets/images/work/detail/mobillink/th.png"/>
-                  </li>
-                  <li class="UX" data-title="O Cha Application" data-order="3" data-link="../pages/project-ocha.html">
-                      <img src="../assets/images/work/detail/ocha/th.png"/>
-                  </li>
-                  <li class="UX" data-title="144 Cake Application" data-order="4" data-link="../pages/project-144cake.html">
-                      <img src="../assets/images/work/detail/144cake/th.png"/>
-                  </li>
-                  <li class="UX" data-title="Endigo Application" data-order="5" data-link="../pages/project-endigo.html">
-                      <img src="../assets/images/work/detail/endigo/th.png"/>
-                  </li>
-                  <li class="UX" data-title="Fredit Web" data-order="6" data-link="#">
-                      <img src="../assets/images/work/detail/fredit/th.png"/>
-                  </li>
-                  <li class="UX" data-title="Space C Mobile Web" data-order="7" data-link="../pages/project-spacec.html">
-                      <img src="../assets/images/work/detail/spacec/th.png"/>
-                  </li>
-                  <li class="UX" data-title="6Nails Web" data-order="8" data-link="../pages/project-6nails.html">
-                      <img src="../assets/images/work/detail/6nails_web/th.png"/>
-                  </li>
-                  <li class="BX" data-title="6Nails Product Design" data-order="9" data-link="../pages/project-6nails.html">
-                      <img src="../assets/images/work/detail/6nails/th.png"/>
-                  </li>
-                  <li class="BX" data-title="Cyclean Branding" data-order="10" data-link="../pages/project-cyclean.html">
-                      <img src="../assets/images/work/detail/cyclean/th.png"/>
-                  </li>
-              </ul>
+
             </div>
+            <!-- //container -->
+
           </div>
         </div>
       </div>
-
-      <!-- footer -->
-      <footer class="footer">
-        <div class="footer-inner">
-          <p class="footer-title"> 새로운 경험을 그리는 <span>New eXperience Gram</span></p>
-          <a href="mailto:project@nxgram.com">project@nxgram.com</a>
-          <p class="footer-copy">
-            Privacy Policy
-            <span>© 2021 Nxgram Co. All Rights Reserved.</span>
-          </p>
-        </div>
-      </footer>
-
     </div>
 
-    <script src='../assets/scripts/plugin.imagesloaded.pkgd.js'></script>
-    <!-- <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script> -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="footer-title"> 새로운 경험을 그리는 <span>New eXperience Gram</span></p>
+        <a href="mailto:project@nxgram.com">project@nxgram.com</a>
+        <p class="footer-copy">
+          Privacy Policy
+          <span>© 2021 Nxgram Co. All Rights Reserved.</span>
+        </p>
+      </div>
+    </footer>
+
+
     <script src="../assets/scripts/core.jquery.js"></script>
-    <script src="../assets/scripts/sdfilterme.js"></script>
-    <script src="../assets/scripts/smoothscroll.js"></script>
-    <script src="../assets/scripts/plugin.animate.js"></script>
-    <!-- Parallax-->
-    <script src="../assets/scripts/common.js"></script>
-    <!-- SmoothScroll-->
-    <!-- <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
-    <script  src="../assets/scripts/smoothscroll.js"></script> -->
-    <!-- Core-->      
-    <!-- <script src="../assets/scripts/core.jquery.js"></script> -->
-    <!-- Vendor Plugins-->
-    <!-- <script src="../assets/scripts/plugin.imagesloaded.pkgd.js"></script>
-    <script src="../assets/scripts/plugin.in-viewport.js"></script>
-    <script src="../assets/scripts/plugin.animate.js"></script>
-    <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script>
-    <script src="../assets/scripts/plugin.ScrollToPlugin.min.js"></script>
-    <script src="../assets/scripts/plugin.SplitText.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src='../assets/scripts/plugin.imagesloaded.pkgd.js'></script>
     <script src="../assets/scripts/plugin.TweenMax.min.js"></script>
-    <script src="../assets/scripts/plugin.touchSwipe.min.js"></script>
-    <script src="../assets/scripts/plugin.typed.min.js"></script> -->
-    <!-- Plugins-->
-    <!-- <script src="../assets/plugins/nevo-slider/nevo-slider.js"></script>
-    <script src="../assets/plugins/nevo-lightbox/nevo-lightbox.js"></script>
-    <script src="../assets/scripts/main.functions.js"></script> -->
+    <!-- <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script> -->
+    <!-- <script src="../assets/scripts/sdfilterme.js"></script> -->
+    <!-- <script src="../assets/scripts/plugin.animate.js"></script>
+    <script src="../assets/scripts/plugin.SplitText.js"></script> -->
+    <!-- Parallax-->
+    <script src="../assets/scripts/common.js" defer></script>
+
+    <script>
+      $('#masonry-grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+      });
+
+
+      // This does the filter by binding an event on the change of a select box
+      $("#grid-filter li").click(function(e) {
+        console.log(e.target)
+        $("#grid-filter li").removeClass("on");
+        $(e.target).addClass("on");
+
+        var group = $(this).data('category');
+        var group_class = "." + group;
+        
+          if(group == "*"){
+              $(".grid-item").show();
+            $('#masonry-grid').masonry('layout');
+            }
+          else if(group != "") {
+          $(".grid-item").hide();
+          $(group_class).show();
+          $('#masonry-grid').masonry('layout');
+        } else {
+          $(".grid-item").show();
+          $('#masonry-grid').masonry('layout');
+        }
+      });
+
+      //effect3
+      $('.animated-text').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w|.)/g, "<span class='_text'>$&</span>"));
+      });
+      var $text = $(".animated-text span"),
+          tl = new TimelineMax();
+
+      tl
+        .delay(2)
+        .staggerFrom($text, 0.2, {alpha: 0,y:50, z: 0, ease:Linear.easeNone}, 0.05)
+
+    </script>
+    <script src="../assets/scripts/smoothscroll.js" defer></script>
   </body>
 </html>

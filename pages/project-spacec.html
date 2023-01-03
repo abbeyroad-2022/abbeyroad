@@ -1,220 +1,210 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>New eXperience Gram</title>
-    <meta content="The contact page." name="description">
+    <meta content="The contact page." name="description" />
     <!-- Styles-->
-    <link rel="stylesheet" href="../assets/styles/style.css">
-    <link rel="stylesheet" href="../assets/styles/parallax.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/styles/reset.css" />
+    <link rel="stylesheet" href="../assets/styles/common.css" />
+    <link rel="stylesheet" href="../assets/styles/sub.css" />
     <!-- Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicon/favicon-16x16.png"
+    />
     <!-- <link rel="manifest" href="../assets/images/favicon/site.webmanifest"> -->
-    <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#000000">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="mask-icon"
+      href="../assets/images/favicon/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <style>
+      img {
+        max-width: 100%;
+      }
+    </style>
   </head>
   <body class="nav-alt">
+    <!-- a_skip -->
+    <div id="a_skip">
+      <a href="#nav"><span>메뉴 바로가기</span></a>
+      <a href="#content"><span>본문 바로가기</span></a>
+    </div>
+
+    <!-- wrapper -->
     <div class="wrapper">
-      <!-- Header-->
-      <header class="header"><a class="brand" href="../index.html"><img class="default" alt="Nevo example image" src="../assets/images/logo.svg"><img class="white" alt="Nevo example image" src="../assets/images/logo-white.svg"></a>
-        <!-- Navigation-->
-        <ul class="menu main">
-          <li class="menu-item"><a class="menu-link" href="../pages/about-studio.html">하는 일</a></li>
-          <li class="menu-item"><a class="menu-link" href="../pages/portfolio-filters.html">프로젝트</a></li>
-          <li class="menu-item"><a class="menu-link" href="../pages/contact.html">문의하기</a></li>
-        </ul>
-        <!-- About section-->
-        <div class="menu about">
-          <div class="copy">새로운 경험을 그리는</div> 
-          <div class="copy2">new eXperience Gram</div> <br><br>
-          <a class="menu-link anchor-link" href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-          <a class="menu-link anchor-link" href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
-          <a class="menu-link anchor-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>       
+      <!-- Header -->
+      <header class="header" id="header">
+        <a class="brand logo" href="../index.html">
+          <img
+            class="default"
+            src="../assets/images/logo.svg"
+            alt="abbeyroad"
+          />
+        </a>
+        <div class="burger"></div>
+        <div class="nav" id="nav">
+          <ul class="menu main font-ng">
+            <li class="menu-item">
+              <a class="menu-link smooth" href="./about-studio.html">하는 일</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link smooth" href="./portfolio-filters.html">
+                프로젝트
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link smooth" href="./contact.html">문의하기</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu txt">
+          <p>
+            새로운 경험을 그리는
+            <br />
+            New eXperience Gram
+          </p>
+          <!-- <a class="menu-link anchor-link" href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+        <a class="menu-link anchor-link" href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+        <a class="menu-link anchor-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>        -->
         </div>
       </header>
-      <!-- Burger menu-->
-      <div class="burger">
-        <hr>
-        <hr>
-        <hr>
-      </div>
+      <!-- //Header-->
 
-      <div class="content">
-      <div data-scroll>
-        <div data-scroll-content>
-
-          <section class="section-size-2">
-              <div class="container">
-                <div class="grid">
-                  <div class="column-10">
-                    <div class="space-9"></div>
-                    <h9>Project 03</h9>
-                    <h2>Space C : 인테리어, 리모델링 전문 Space C의 모바일웹</h2>
-                    <div class="space-3"></div>
-                    <h7> UI Planning, User Flow, Wireframing, UI Design, XD, Zeplin</h7>
-                </div>
-                </div>
-              </div>
-          </section>
-
-          <div class="space-6"></div>
-
-          <picture class="w100 t-center">
-            <source srcset="../assets/images/work/detail/spacec/m-f2.png" media="(max-width: 850px)">
-            <img src="../assets/images/work/detail/spacec/f2.png">
-          </picture>
-
-          <div class="space-12"></div>
-
-          <div class="container">
-            <div class="grid centered">
-            <div class="column-2">
-              <h3 id="el">Space C</h3>  
+      <div class="content sub none project" id="content">
+        <div data-scroll>
+          <div data-scroll-content>
+            <div class="project-maintitle">
+              <span class="project-num ">Project 03</span>
+              <h2 class="mt40">
+                Space C : 인테리어, 리모델링 전문 Space C의 모바일웹
+                <span class="mt40">
+                  UI Planning, User Flow, Wireframing, UI Design, XD, Zeplin
+                </span>
+              </h2>
             </div>
-            <div class="space-5"></div>
-            <div class="column-8 offset-2" id="el">
-              <h7>Space C 의 인테리어 디자인 아이덴티티는 "Simple & Modern"으로 브랜드 정체성을 모바일에서도 일관되게 정의함으로써 Space C의 브랜드가치를 향상시키고자 했습니다.</h7>
+
+            <picture class="w100 t-center mt220 mb220">
+              <source srcset="../assets/images/work/detail/spacec/m-f2.png" media="(max-width: 850px)">
+              <img src="../assets/images/work/detail/spacec/f2.png">
+            </picture>
+
+            <div class="project-subtitle  ">
+              <h3 class="mt30">Space C</h3>
+              <p>
+                Space C 의 인테리어 디자인 아이덴티티는 "Simple & Modern"으로 브랜드 정체성을 모바일에서도 일관되게 정의함으로써 Space C의 브랜드가치를 향상시키고자 했습니다.
+              </p>
             </div>
+
+            <picture class="w100 t-center mt220">
+              <source srcset="../assets/images/work/detail/spacec/m-a1.png" media="(max-width: 850px)">
+              <img src="../assets/images/work/detail/spacec/a1.png">
+            </picture>
+
+            <picture class="w100 t-center mt220">
+              <source srcset="../assets/images/work/detail/spacec/m-a0.png" media="(max-width: 850px)">
+              <img src="../assets/images/work/detail/spacec/a0.png">
+            </picture>
+
+            <picture class="w100 t-center mt220">
+              <source srcset="../assets/images/work/detail/spacec/m-a2.png" media="(max-width: 850px)">
+              <img src="../assets/images/work/detail/spacec/a2.png">
+            </picture>
+
+            <picture class="w100 t-center">
+              <source srcset="../assets/images/work/detail/spacec/m-a2-1.png" media="(max-width: 850px)">
+              <img src="../assets/images/work/detail/spacec/a2-1.png">
+            </picture>
+
+            <div class="project-video mb220 mt220">
+              <iframe
+                        src="https://player.vimeo.com/video/721877655?h=194316d709&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                      ></iframe>
             </div>
+
+            
+            <div class="grid g4 ">
+              <div class="column-6 image pad-5"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/b1.png"></div>
+              <div class="column-6 image pad-5"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/b2.png"></div>
+              <div class="column-6 image pad-5"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/b3.png"></div>
+              <div class="column-6 image pad-5"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/b4.png"></div>
+            </div>
+
+            <div class="project-subtitle t-center type3 ">
+              <h3 class="mt220">Simple Design</h3>
+              <p>
+                Space C 의 인테리어 디자인 아이덴티티는 "Simple & Modern"으로 브랜드 정체성을 모바일에서도 일관되게 정의함으로써 Space C의 브랜드가치를 향상시키고자 했습니다.
+              </p>
+            </div>
+
+            <picture class="w100 t-center mt220 mb220">
+              <img alt="Nevo example image" src="../assets/images/work/detail/spacec/f1.png">
+            </picture>
+
+            <picture class="w100 t-center mt220 mb220">
+              <img alt="Nevo example image" src="../assets/images/work/detail/spacec/f4.png">
+            </picture>
+
+            <picture class="w100 t-center mt220 mb220">
+              <img alt="Nevo example image" src="../assets/images/work/detail/spacec/f3.png">
+            </picture>
+
           </div>
-          </section> 
-
-          <div class="space-12"></div>
-
-          <picture class="w100 t-center">
-            <source srcset="../assets/images/work/detail/spacec/m-a1.png" media="(max-width: 850px)">
-            <img src="../assets/images/work/detail/spacec/a1.png">
-          </picture>
-
-          <div class="space-6"></div>
-
-          <picture class="w100 t-center">
-            <source srcset="../assets/images/work/detail/spacec/m-a0.png" media="(max-width: 850px)">
-            <img src="../assets/images/work/detail/spacec/a0.png">
-          </picture>
-        
-          <div class="space-6"></div>
-
-          <picture class="w100 t-center">
-            <source srcset="../assets/images/work/detail/spacec/m-a2.png" media="(max-width: 850px)">
-            <img src="../assets/images/work/detail/spacec/a2.png">
-          </picture>
-
-          <picture class="w100 t-center">
-            <source srcset="../assets/images/work/detail/spacec/m-a2-1.png" media="(max-width: 850px)">
-            <img src="../assets/images/work/detail/spacec/a2-1.png">
-          </picture>
-
-          <div class="space-9"></div>
-        
-          <section class="nevo-slider fullscreen">
-            <div class="slides">
-                <div class="slide">
-                <div class="background">
-                  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/721877655?h=194316d709&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                </div>
-                </div>
-            </div>
-          </section>
-
-          <div class="space-9"></div>
-
-          <section class="section-size-2">
-              <div class="container">
-                  <div class="grid">
-                      <div class="column-6 image pad-5"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/b1.png"></div>
-                      <div class="column-6 image pad-5"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/b2.png"></div>
-                      <div class="column-6 image pad-5"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/b3.png"></div>
-                      <div class="column-6 image pad-5"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/b4.png"></div>
-                  </div>
-              </div>
-          </section>
-
-
-          <section class="section-size-6">
-              <div class="container">
-                <div class="column-6 centered text-center text-left-mobile">
-                    <h2>Simple Design</h2>
-                    <h7>Space C 의 인테리어 디자인 아이덴티티는 "Simple & Modern"으로 브랜드 정체성을 모바일에서도 일관되게 정의함으로써 Space C의 브랜드가치를 향상시키고자 했습니다.</h7>
-                </div>
-              </div>
-          </section>
-
-          <section class="image"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/f1.png"></section>
-
-          <div class="space-6"></div>
-
-          <section class="image"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/f4.png"></section>
-
-          <div class="space-6"></div>
-
-          <section class="image"><img alt="Nevo example image" src="../assets/images/work/detail/spacec/f3.png"></section>
-
-
-          <div class="space-12"></div>
-          <div class="last-item"></div>
-
         </div>
       </div>
+      
+      <div class="next-project w100 t-center">
+        <a class="thumb animated w100 center" href="../pages/project-6nails.html">      
+          <picture class="next-navigation w100 t-center">
+            <source srcset="../assets/images/work/detail/6nails/m-n1.png" media="(max-width: 850px)">
+            <img src="../assets/images/work/detail/6nails/n1.png">
+          </picture>    
+          <span class="nextpj-rect">NEXT WORK</span>
+          <span class="nextpj-hover">6 Nails <span class="smtxt">UX</span></span>
+        </a>
       </div>
-  
-          <!-- 넥스트네비게이션-->
-          <section class="section-size-0"> 
-              <a class="thumb animated" href="../pages/project-6nails.html">       
-              <picture class="next-navigation"> 
-                  <source srcset="../assets/images/work/detail/6nails/m-n1.png" media="(max-width: 850px)">
-                  <img src="../assets/images/work/detail/6nails/n1.png">
-                  <div class="overtext">NEXT WORK</div>
-              </picture>       
-              <div class="navicaption"> 
-                  <div class="navititle">6 Nails</div>
-                  <div class="navisub">UX</div>
-              </div>               
-              </a>
-          </section>
 
-
-        <!-- footer -->
-        <section class="section-size-0"> 
-          <div class="slide0" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-              <div class="container clearfix">
-                  <div id="content" class="grid_12">
-                    <div class="column-12">
-                      <div class="tahoma">새로운 경험을 그리는</div>
-                      <h2>New eXperience Gram</h2> 
-                      <h9>project@nxgram.com</h9><br>
-                      <h9>Privacy Policy</h9><br><br>
-                      <span>&copy; 2021 Nxgram Co. All Rights Reserved.</span>
-                  </div>
-                  </div>
-              </div>
-          </div>
-        </section>
-
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-title">
+            새로운 경험을 그리는
+            <span>New eXperience Gram</span>
+          </p>
+          <a href="mailto:project@nxgram.com">project@nxgram.com</a>
+          <p class="footer-copy">
+            Privacy Policy
+            <span>© 2021 Nxgram Co. All Rights Reserved.</span>
+          </p>
+        </div>
+      </footer>
     </div>
-    <!-- SmoothScroll-->
-    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script><script  src="../assets/scripts/smoothscroll.js"></script>
 
-    <!-- Core-->
-    <script src="../assets/scripts/core.jquery.js"></script>
-    <!-- Vendor Plugins-->
-    <script src="../assets/scripts/plugin.imagesloaded.pkgd.js"></script>
-    <script src="../assets/scripts/plugin.in-viewport.js"></script>
-    <script src="../assets/scripts/plugin.animate.js"></script>
-    <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script>
-    <script src="../assets/scripts/plugin.ScrollToPlugin.min.js"></script>
-    <script src="../assets/scripts/plugin.SplitText.js"></script>
-    <script src="../assets/scripts/plugin.TweenMax.min.js"></script>
-    <script src="../assets/scripts/plugin.touchSwipe.min.js"></script>
-    <script src="../assets/scripts/plugin.typed.min.js"></script>
-    <!-- Plugins-->
-    <script src="../assets/plugins/nevo-slider/nevo-slider.js"></script>
-    <script src="../assets/plugins/nevo-lightbox/nevo-lightbox.js"></script>
-    <script src="../assets/scripts/main.functions.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <!-- SmoothScroll-->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/scripts/smoothscroll.js"></script>
+    <!-- Parallax-->
+    <script src="../assets/scripts/common.js"></script>
   </body>
 </html>

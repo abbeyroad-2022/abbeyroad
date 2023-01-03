@@ -11,7 +11,9 @@ function mainLoaded (){
 
   imagesLoaded( $html , function() {
     console.log('all images are loaded');
-    $html.classList.add("loaded")
+    setTimeout(function(){
+      $html.classList.add("loaded")
+    },1000)
     // iframes.forEach((i) => { 
     //   i.addEventListener('load', function () {
     //     count++;
