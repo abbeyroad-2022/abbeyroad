@@ -56,16 +56,21 @@
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
+  -webkit-box-sizing: content-box;
 }
 .scroller {
   width: 3px;
   height: 10px;
   border-radius: 25%;
   background-color:  rgb(0, 0, 0);
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+          animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .scroll-text {
   top: 0;
@@ -90,7 +95,8 @@
   padding-left: 2rem;
   width: auto;
   max-width: 580px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main-full-txt .number {
@@ -141,6 +147,8 @@
   color: #252526;
   border: 1px solid #252526;
   border-radius: 8px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -213,7 +221,12 @@
   }
   /* 세로모드 */
   @media (orientation: portrait) {
-    .fl-row-reverse {flex-direction: column-reverse;}
+    .fl-row-reverse {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+    }
     .main-full-img.video.v2 {
       padding-top: 35%;
     }
@@ -228,10 +241,22 @@
   .mobile-pic {display: block;}
 
   .main-full-txt .pc-tit , .main-full-txt .des{ display: none; }
-  .main .section .fl { flex-direction: column; }
+  .main .section .fl { 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+   }
   .main-full-txt { padding-left: 0; text-align: center;}
   .main-full-txt .title {margin: 0 0 2%; font-size: 25px;}
-  .main-full-link { position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 150%);}
+  .main-full-link { 
+    position: absolute; 
+    left: 50%; 
+    bottom: 0; 
+    -webkit-transform: translate(-50%, 150%); 
+    -ms-transform: translate(-50%, 150%); 
+    transform: translate(-50%, 150%);
+  }
   .main-full-img { width: 52%; max-width: 320px; }
   .main-full-img.big {width: 58%;}
 

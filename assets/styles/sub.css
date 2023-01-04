@@ -33,13 +33,20 @@ html {
 }
 
 .about .title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about .title h2 span:nth-child(2) {
   width: 500px;
-  transform: translateX(200px);    
+  -webkit-transform: translateX(200px);
+      -ms-transform: translateX(200px);
+          transform: translateX(200px);  
 }
 .about .nxgram {
   position: absolute;
@@ -60,15 +67,23 @@ html {
 }
 
 .graphic-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100vh;
   opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -135,7 +150,9 @@ html {
   }
   .about .title h2 span:nth-child(2) {
     width: 400px;
-    transform: translateX(120px);    
+    -webkit-transform: translateX(120px);
+        -ms-transform: translateX(120px);
+            transform: translateX(120px);  
   }
 }
 
@@ -163,7 +180,10 @@ html {
   }
   .about .title h2 span:nth-child(2) {
     width: 290px;
-    transform: translateX(80px);
+    transform: translateX(80px)
+    -webkit-transform: translateX(80px);
+        -ms-transform: translateX(80px);
+            transform: translateX(80px);
   }
     
   .about h3 {
@@ -204,7 +224,9 @@ html {
   }
   .about .title h2 span:nth-child(2) {
     width: 200px;
-    transform: translateX(60px);
+    -webkit-transform: translateX(60px);
+        -ms-transform: translateX(60px);
+            transform: translateX(60px);
   }
   .about h3 {
     font-size: 25px;
@@ -261,7 +283,7 @@ html {
 #grid-filter li.on {color: #282828;}
 
 #masonry-grid {margin-left: -40px;}
-#masonry-grid img {width: 100%; transition: all 0.3s linear;}
+#masonry-grid img {width: 100%; transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear;}
 #masonry-grid a { position: relative; display: block; margin: 40px; overflow: hidden; }
 #masonry-grid .grid-item {width: 33.33%;}
 #masonry-grid .grid-item .ov {
@@ -272,6 +294,8 @@ html {
   height: 100%; 
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
 }
 #masonry-grid a .ov-ty {
@@ -283,7 +307,11 @@ html {
   font-size: 10px;
   color: #fff;
   opacity: 0;
-  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 #masonry-grid a .ov-tit {
@@ -293,7 +321,11 @@ html {
   font-size: 27px;
   color: #fff;
   opacity: 0;
-  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 #masonry-grid a .ov-tit span {
@@ -301,14 +333,20 @@ html {
   padding-top: 8px;
   font-size: 22px;
   opacity: 0;
-  transform: translateY(40px);
-  transition-delay: 0.5s;
+  -webkit-transform: translateY(40px);
+      -ms-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .grid-sizer { width: 33.33%; }
-#masonry-grid a:hover .ov, #masonry-grid a:hover .ov-ty, #masonry-grid a:hover .ov-tit , #masonry-grid a:hover .ov-tit span {opacity:1; transform: translateY(0px);}
-#masonry-grid a:hover img {transform: scale(1.1);}
-
+#masonry-grid a:hover .ov, #masonry-grid a:hover .ov-ty, #masonry-grid a:hover .ov-tit , #masonry-grid a:hover .ov-tit span {opacity:1; -webkit-transform: translateY(0px); -ms-transform: translateY(0px); transform: translateY(0px);}
+#masonry-grid a:hover img {-webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+tra
 .animated-text{
   width: 670px; 
 }
@@ -370,18 +408,22 @@ html {
   #masonry-grid a .ov-tit {
     left: 0;
     bottom: 25px;
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
     color: #282828;
     font-size: 18px;
   }
   #masonry-grid a .ov-tit span {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
     color: #95969c;
     font-size: 14px;
   }
-  #masonry-grid a:hover img {transform: scale(1);}
+  #masonry-grid a:hover img {-webkit-transform: scale(1);-ms-transform: scale(1);transform: scale(1);}
 }
 
 
@@ -397,7 +439,7 @@ html {
 .project-maintitle .mt40 {margin-top: 40px;}
 .project-video {position: relative; width: 100%; padding-top:56.25%}
 .project-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.project-subtitle { max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column;}
+.project-subtitle { max-width: 1440px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
 .project-subtitle h3 {font-size: 40px; font-weight: 600;}
 .project-subtitle p { padding: 50px 0px 0px 240px; font-size: 22px; line-height: 1.5; word-break: keep-all;}
 .project-subtitle.type3 h3 {font-size: 66px; font-weight: 600;}
@@ -406,9 +448,11 @@ html {
 .project-subtitle.type2 h3 {width: 50%; font-size: 66px; padding-right: 6%;}
 .project-subtitle.type2 p {width: 50%; padding: 0;}
 .next-project {position: relative; top: 6px; z-index: 8; overflow: hidden;}
-.next-project a picture {transition: all 0.3s ease-in;}
+.next-project a picture {tr-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
 .next-project a::after {
   content: ""; 
+  -webkit-transition: all 0.3s ease-in; 
+  -o-transition: all 0.3s ease-in; 
   transition: all 0.3s ease-in; 
   position: absolute;
   top: 0;
@@ -431,10 +475,12 @@ html {
   font-size: 16px; 
   line-height: 55px; 
   text-align: center;
-  transform: translateX(-60px) translateY(-20px);
+  -webkit-transform: translateX(-60px) translateY(-20px);
+      -ms-transform: translateX(-60px) translateY(-20px);
+          transform: translateX(-60px) translateY(-20px);
 }
 .next-project a:hover .nextpj-rect { opacity: 0;}
-.next-project a:hover picture {transform: scale(1.1);}
+.next-project a:hover picture {-webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
 .next-project a:hover::after {opacity: 1; z-index: 9;}
 .next-project  .nextpj-hover {
   position: absolute; 
@@ -445,8 +491,14 @@ html {
   color: #fff; 
   text-align: left;
   z-index: 10; 
-  transform: translateY(20px);
+  -webkit-transform: translateY(20px); 
+      -ms-transform: translateY(20px); 
+          transform: translateY(20px);
+  -webkit-transition: opacity .5s, -webkit-transform .5s;
+  transition: opacity .5s, -webkit-transform .5s;
+  -o-transition: opacity .5s, transform .5s;
   transition: opacity .5s, transform .5s;
+  transition: opacity .5s, transform .5s, -webkit-transform .5s;
   opacity: 0;
 }
 .next-project  .nextpj-hover span {
@@ -454,12 +506,20 @@ html {
   padding-top: 10px; 
   font-size: 22px; 
   font-weight: 300;
-  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+      -ms-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: opacity .5s ease-in, -webkit-transform .5s ease-in;
+  transition: opacity .5s ease-in, -webkit-transform .5s ease-in;
+  -o-transition: opacity .5s ease-in, transform .5s ease-in;
   transition: opacity .5s ease-in, transform .5s ease-in;
-  transition-delay: 0.1s;
+  transition: opacity .5s ease-in, transform .5s ease-in, -webkit-transform .5s ease-in;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
-.next-project  a:hover .nextpj-hover , .next-project  a:hover .nextpj-hover span { transform: translateY(0px); opacity: 1;}
+.next-project  a:hover .nextpj-hover , .next-project  a:hover .nextpj-hover span {  -webkit-transform: translateY(0px); -ms-transform: translateY(0px); transform: translateY(0px); opacity: 1;}
 
 /* 작은 모니터  */
 @media screen and (min-width: 1025px) and (max-width: 1450px) {
@@ -497,7 +557,7 @@ html {
   .project-subtitle p { padding: 20px 0px 0px 0px; font-size: 15px; }
   .project-subtitle.type3 h3 {font-size: 28px; }
   .project-subtitle.type2 h3 {font-size: 28px; }
-  .project-subtitle.type2 {flex-direction: column;}
+  .project-subtitle.type2 {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
   .project-subtitle.type2 h3, .project-subtitle.type2 p {width: 100%; padding-top: 20px;}
   
 }
@@ -511,13 +571,30 @@ html {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .grid.g4 > div  { 
   width: 50%;
   padding: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; 
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
