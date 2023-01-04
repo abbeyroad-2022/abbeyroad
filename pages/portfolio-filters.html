@@ -33,12 +33,11 @@
         <a class="brand logo" href="../index.html">
           <img class="default" src="../assets/images/logo.svg" alt="abbeyroad">
         </a>  
-        <div class="burger"></div>
         <div class="nav" id="nav">
           <ul class="menu main font-ng">
             <li class="menu-item"><a class="menu-link smooth" href="./about-studio.html">하는 일</a></li>
             <li class="menu-item"><a class="menu-link smooth" href="./portfolio-filters.html">프로젝트</a></li>
-            <li class="menu-item"><a class="menu-link smooth" href="./contact.html">문의하기</a></li>
+            <li class="menu-item last"><a class="menu-link smooth" href="./contact.html">문의하기</a></li>
           </ul>
         </div>
         <div class="menu txt">
@@ -47,6 +46,7 @@
           <a class="menu-link anchor-link" href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
           <a class="menu-link anchor-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>        -->
         </div>
+        <a class="burger"></a>
       </header>
       <!-- //Header-->
       <div class="content portfolio sub" id="content">
@@ -177,25 +177,26 @@
     </footer>
 
 
-    <script src="../assets/scripts/core.jquery.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src='../assets/scripts/plugin.imagesloaded.pkgd.js'></script>
-    <script src="../assets/scripts/plugin.TweenMax.min.js"></script>
+    <script src="../assets/scripts/core.jquery.js" ></script>
+    <script src="../assets/scripts/masonry.pkgd.min.js" ></script>
+    <script src='../assets/scripts/plugin.imagesloaded.pkgd.js' ></script>
+    <script src="../assets/scripts/plugin.TweenMax.min.js" ></script>
     <!-- <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script> -->
     <!-- <script src="../assets/scripts/sdfilterme.js"></script> -->
     <!-- <script src="../assets/scripts/plugin.animate.js"></script>
     <script src="../assets/scripts/plugin.SplitText.js"></script> -->
     <!-- Parallax-->
-    <script src="../assets/scripts/common.js" defer></script>
+    <script src="../assets/scripts/common.js" ></script>
 
-    <script>
-      $('#masonry-grid').masonry({
+    <script >
+      $('#masonry-grid').imagesLoaded( function() {
+
+        $('#masonry-grid').masonry({
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
+        });    
       });
 
-
-      // This does the filter by binding an event on the change of a select box
       $("#grid-filter li").click(function(e) {
         console.log(e.target)
         $("#grid-filter li").removeClass("on");

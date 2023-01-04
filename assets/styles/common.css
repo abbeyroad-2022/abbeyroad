@@ -143,6 +143,7 @@ html.loaded:before, html.loaded:after {
 }
 
 .header .burger  {
+  display: block;
   position: fixed;
   top: 30px;
   right: 40px;
@@ -151,22 +152,24 @@ html.loaded:before, html.loaded:after {
   cursor: pointer;
 }
 
-.header .burger hr {
-  border: 1px solid #000000;
+.header .burger span {
+  display: block;
+  background: #000;
   width: 100%;
-  margin: 9px 0;
+  height: 1px;
+  margin: 9px 0px;
   transition: all .3s;
 }
 
-.header.active .burger hr:first-child {
-  transform: rotate(-45deg) translate(-5px,10px);
+.header.active .burger span:first-child {
+  transform: rotate(-45deg) translate(-4px,9px);
 }
 
-.header.active .burger hr:nth-child(2) {
+.header.active .burger span:nth-child(2) {
   opacity: 0;
 }
 
-.header.active .burger hr:last-child {
+.header.active .burger span:last-child {
   transform: rotate(45deg) translate(-5px,-10px);
 }
 
@@ -360,6 +363,7 @@ html.loaded:before, html.loaded:after {
   .header .menu.main {
     left: 20px;
     font-size: 30px;
+    transform: translate(0%, 0%) scale(1);
   }
   .header.active .menu.main {
     top: 120px;
@@ -379,4 +383,37 @@ html.loaded:before, html.loaded:after {
   .footer-inner .footer-title {  font-size: 24px; }
   .footer-inner .footer-title span {  font-size: 20px; }
   .footer-inner .footer-copy, .footer-inner a { font-size: 14px; }
+}
+
+
+.topbtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 9;
+}
+.topbtn::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(30deg);
+  position: absolute;
+  top:50%;
+  right: 2px;
+}
+.topbtn::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(-30deg);
+  position: absolute;
+  top:50%;
+  left: 1px;
 }

@@ -31,7 +31,7 @@ function headerToggle (){
   let header = document.querySelector(".header");
   let tr = false;
 
-  burger.innerHTML = `<hr/><hr/><hr/>`;
+  burger.innerHTML = `<span></span><span></span><span></span>`;
   burger.addEventListener("click",function(){
     tr = !tr;
     if(tr){
@@ -43,6 +43,42 @@ function headerToggle (){
   })
 }
 
+function scrollTop () {
+  let body = document.querySelector('body');
+  let topBtn = document.createElement("span");
+  topBtn.className = "topbtn";
+  topBtn.addEventListener("click", function(){
+    window.scrollTo(0, 0);
+  })
+  body.appendChild(topBtn);
+}
+
+
 mainLoaded();
 headerToggle();
+scrollTop();
 
+
+let aSkip = document.querySelectorAll("#a_skip a");
+let header = document.querySelector(".header");
+let last = document.querySelector(".menu-item.last");
+
+aSkip.forEach(function(i){
+  i.addEventListener('focus', function(e){
+    if(i.href.split("#")[1] == "nav"){         
+      //console.log(`${i} in`)       
+      header.classList.add("active");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    } else if(i.href.split("#")[1] == "content"){    
+      header.classList.remove("active");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    }
+  });
+  i.addEventListener('focusout', function(e){
+    if(i.href.split("#")[1] == "content"){          
+      //console.log(`${i} out`)       
+      header.classList.remove("active");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    }
+  });
+})
+last.addEventListener('focusout', function(e){
+  header.classList.remove("active"); 
+});

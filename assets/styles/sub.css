@@ -337,7 +337,7 @@ html {
   #masonry-grid {margin-left: 0;}
   #masonry-grid a {margin: 0; padding-bottom: 70px;}
   #masonry-grid .grid-item {width: 100%;}
-  #masonry-grid a:hover .ov { opacity: 0;}
+  #masonry-grid a:hover .ov, #masonry-grid a:hover .ov-ty { opacity: 0;}
   #masonry-grid a .ov-tit {
     left: 0;
     bottom: 25px;
@@ -352,6 +352,7 @@ html {
     color: #95969c;
     font-size: 14px;
   }
+  #masonry-grid a:hover img {transform: scale(1);}
 }
 
 
