@@ -117,7 +117,8 @@ html {
 .graphic-item.renew:nth-child(2) { background: #1b2d3a; }
 .graphic-item.renew:nth-child(3) { background: #3e3d53; }
 
-@media screen and (min-width: 1025px) and (max-width: 1300px) {
+/* 작은 모니터 */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
   .sub-inner {
     padding: 0px 40px;
   }
@@ -125,6 +126,9 @@ html {
     width: auto;
     margin: 0px 40px 300px;
     font-size: 90px;
+  }
+  .about .rolltext {
+    padding-left: 40px;
   }
   .about .nxgram {
     left: 390px;  
@@ -317,7 +321,11 @@ html {
   .sub.portfolio .container {padding: 240px 40px 0px;}
   .animated-text { width: 450px;}
   .portfolio-title {font-size: 44px; }
-  #masonry-grid {margin-left: 0;}
+  #masonry-grid a {margin: 20px }
+  #masonry-grid {
+    margin-left: -20px;
+    width: calc(100% + 40px);;
+  }
 }
 
 /* 테블릿 */
@@ -325,8 +333,11 @@ html {
   .sub.portfolio .container {padding: 180px 40px 0px;}
   .animated-text { width: 450px;}
   .portfolio-title {font-size: 44px; }
-  #masonry-grid a {margin: 20px }
-  #masonry-grid {margin-left: 0;}
+  #masonry-grid a {margin: 10px }
+  #masonry-grid {
+    margin-left: -10px;
+    width: calc(100% + 20px);;
+  }
 }
 
 /* 모바일 */
