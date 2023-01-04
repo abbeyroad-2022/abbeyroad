@@ -326,6 +326,15 @@ html {
     margin-left: -20px;
     width: calc(100% + 40px);;
   }
+  
+  #masonry-grid a .ov-ty {
+    top: 20px; 
+    left: 20px;
+  }
+  #masonry-grid a .ov-tit {
+    bottom: 20px; 
+    left: 20px;
+  }
 }
 
 /* 테블릿 */
@@ -337,6 +346,15 @@ html {
   #masonry-grid {
     margin-left: -10px;
     width: calc(100% + 20px);;
+  }
+  
+  #masonry-grid a .ov-ty {
+    top: 20px; 
+    left: 20px;
+  }
+  #masonry-grid a .ov-tit {
+    bottom: 20px; 
+    left: 20px;
   }
 }
 
