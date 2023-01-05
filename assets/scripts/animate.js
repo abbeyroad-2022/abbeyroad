@@ -17,7 +17,12 @@ function animateText(){
         txt.forEach(function(t){
           arr.push(t.replace(/([^\x00-\x80]|\w|.)/g, "<span class='_text'>$&</span>"))
         })
-        temp.push(arr.map(t => `<div class='_box'>${t}</div>`).join(""))
+        //temp.push(arr.map(t => `<div class='_box'>${t}</div>`).join(""))
+        temp.push(
+          arr.map(function(t){
+            return `<div class='_box'>${t}</div>`
+          }).join("")
+        )
         if(idx != splitText.length -1) {
           temp.push("<br>")
         }
