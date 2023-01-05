@@ -57,7 +57,7 @@
             <div class="container">
 
               <div class="portfolio-title ">
-                <h2 class="animated-text">프로젝트를 통한 경험이 <br>가장 큰 자산입니다.</h2>
+                <h2 class="animated-text">프로젝트를 통한 경험이<br>가장 큰 자산입니다.</h2>
               </div>
             
               <ul id="grid-filter">
@@ -177,10 +177,11 @@
     </footer>
 
 
-    <script src="../assets/scripts/core.jquery.js" ></script>
+    <!-- <script src="../assets/scripts/core.jquery.js" ></script> -->
     <script src="../assets/scripts/masonry.pkgd.min.js" ></script>
     <script src='../assets/scripts/plugin.imagesloaded.pkgd.js' ></script>
     <script src="../assets/scripts/plugin.TweenMax.min.js" ></script>
+    <script src="../assets/scripts/animate.js"></script>
     <!-- <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script> -->
     <!-- <script src="../assets/scripts/sdfilterme.js"></script> -->
     <!-- <script src="../assets/scripts/plugin.animate.js"></script>
@@ -189,47 +190,48 @@
     <script src="../assets/scripts/common.js" ></script>
 
     <script >
-      $('#masonry-grid').imagesLoaded( function() {
+      let list = document.querySelector('#masonry-grid');
+      let items = document.querySelectorAll('.grid-item');
+      let filters = document.querySelectorAll('#grid-filter li');
 
-        $('#masonry-grid').masonry({
+      imagesLoaded( list, function() {
+        var msnry = new Masonry( list, {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
-        });    
+        });
       });
 
-      $("#grid-filter li").click(function(e) {
-        console.log(e.target)
-        $("#grid-filter li").removeClass("on");
-        $(e.target).addClass("on");
+      filters.forEach(function(i){ 
+        i.addEventListener("click",function(e){
+          filters.forEach(function(i){
+            i.classList.remove("on")
+          })
+          e.target.classList.add("on");
 
-        var group = $(this).data('category');
-        var group_class = "." + group;
-        
-          if(group == "*"){
-              $(".grid-item").show();
-            $('#masonry-grid').masonry('layout');
-            }
-          else if(group != "") {
-          $(".grid-item").hide();
-          $(group_class).show();
-          $('#masonry-grid').masonry('layout');
-        } else {
-          $(".grid-item").show();
-          $('#masonry-grid').masonry('layout');
-        }
-      });
-
-      //effect3
-      $('.animated-text').each(function(){
-        $(this).html($(this).text().replace(/([^\x00-\x80]|\w|.)/g, "<span class='_text'>$&</span>"));
-      });
-      var $text = $(".animated-text span"),
-          tl = new TimelineMax();
-
-      tl
-        .delay(2)
-        .staggerFrom($text, 0.2, {alpha: 0,y:50, z: 0, ease:Linear.easeNone}, 0.05)
-
+          let category = e.target.getAttribute("data-category");
+          if(category == "*"){
+            items.forEach(function(i) { 
+              i.style.display == "block"
+            })
+            msnry.layout();
+          } else if(category !== ""){
+            items.forEach(function(i) { 
+              console.log(i.classList.contains(category))
+              if(i.classList.contains(category)){
+                i.style.display == "block"
+              } else {
+                i.style.display == "none"
+              }
+            })
+            msnry.layout();
+          } else {
+            items.forEach(function(i) { 
+              i.style.display == "block"
+            })
+            msnry.layout();
+          }
+        })
+       })
     </script>
     <script src="../assets/scripts/smoothscroll.js" defer></script>
   </body>

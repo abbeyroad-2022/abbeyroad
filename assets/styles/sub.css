@@ -346,18 +346,11 @@ html {
 .grid-sizer { width: 33.33%; }
 #masonry-grid a:hover .ov, #masonry-grid a:hover .ov-ty, #masonry-grid a:hover .ov-tit , #masonry-grid a:hover .ov-tit span {opacity:1; -webkit-transform: translateY(0px); -ms-transform: translateY(0px); transform: translateY(0px);}
 #masonry-grid a:hover img {-webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
-tra
-.animated-text{
-  width: 670px; 
-}
-.animated-text span{ display: inline-block;}
-.animated-text span:nth-child(5), .animated-text span:nth-child(8), .animated-text span:nth-child(12), .animated-text span:nth-child(15), .animated-text span:nth-child(17){ padding-right: 10px;}
 
 
 /* 작은 모니터 */
 @media screen and (min-width: 1025px) and (max-width: 1450px) {
   .sub.portfolio .container {padding: 240px 40px 0px;}
-  .animated-text { width: 450px;}
   .portfolio-title {font-size: 44px; }
   #masonry-grid a {margin: 20px }
   #masonry-grid {
@@ -378,7 +371,6 @@ tra
 /* 테블릿 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .sub.portfolio .container {padding: 180px 40px 0px;}
-  .animated-text { width: 450px;}
   .portfolio-title {font-size: 44px; }
   #masonry-grid a {margin: 10px }
   #masonry-grid {
@@ -399,7 +391,6 @@ tra
 /* 모바일 */
 @media screen and (max-width: 767px) {
   .sub.portfolio .container {padding: 120px 20px 0px;}
-  .animated-text { width: 270px;}
   .portfolio-title {font-size: 25px; }
   #masonry-grid {margin-left: 0;}
   #masonry-grid a {margin: 0; padding-bottom: 70px;}
