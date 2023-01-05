@@ -59,7 +59,7 @@
               <div class="portfolio-title ">
                 <h2 class="animated-text">프로젝트를 통한 경험이<br>가장 큰 자산입니다.</h2>
               </div>
-            
+              <span class="toggle-btn mo"></span>
               <ul id="grid-filter">
                 <li data-category="*" class="on">All</li>
                 <li data-category="UX">UX</li>
@@ -181,7 +181,6 @@
     <script src="../assets/scripts/masonry.pkgd.min.js" ></script>
     <script src='../assets/scripts/plugin.imagesloaded.pkgd.js' ></script>
     <script src="../assets/scripts/plugin.TweenMax.min.js" ></script>
-    <script src="../assets/scripts/animate.js"></script>
     <!-- <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script> -->
     <!-- <script src="../assets/scripts/sdfilterme.js"></script> -->
     <!-- <script src="../assets/scripts/plugin.animate.js"></script>
@@ -193,46 +192,61 @@
       let list = document.querySelector('#masonry-grid');
       let items = document.querySelectorAll('.grid-item');
       let filters = document.querySelectorAll('#grid-filter li');
+      let toggleBtn = document.querySelector('.toggle-btn');
+      let tr = false;
+
+      toggleBtn.addEventListener("click", function(e){
+        tr = !tr;
+        if(tr){
+          e.target.classList.add("on")
+          document.querySelector('#grid-filter').style.display = "block";
+        } else {
+          e.target.classList.remove("on")
+          document.querySelector('#grid-filter').style.display = "none";
+        }
+      })
 
       imagesLoaded( list, function() {
         var msnry = new Masonry( list, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
         });
+
+        filters.forEach(function(i){ 
+          i.addEventListener("click",function(e){
+            filters.forEach(function(i){
+              i.classList.remove("on")
+            })
+            e.target.classList.add("on");
+
+            let category = e.target.getAttribute("data-category");
+            if(category == "*"){
+              items.forEach(function(i) { 
+                i.style.display = "block"
+              })
+              msnry.layout();
+            } else if(category !== ""){
+              items.forEach(function(i) { 
+                if(i.classList.contains(category)){
+                  i.style.display = "block"
+                } else {
+                  i.style.display = "none"
+                }
+              })
+              msnry.layout();
+            } else {
+              items.forEach(function(i) { 
+                i.style.display = "block"
+              })
+              msnry.layout();
+            }
+          })
+        })
       });
 
-      filters.forEach(function(i){ 
-        i.addEventListener("click",function(e){
-          filters.forEach(function(i){
-            i.classList.remove("on")
-          })
-          e.target.classList.add("on");
-
-          let category = e.target.getAttribute("data-category");
-          if(category == "*"){
-            items.forEach(function(i) { 
-              i.style.display == "block"
-            })
-            msnry.layout();
-          } else if(category !== ""){
-            items.forEach(function(i) { 
-              console.log(i.classList.contains(category))
-              if(i.classList.contains(category)){
-                i.style.display == "block"
-              } else {
-                i.style.display == "none"
-              }
-            })
-            msnry.layout();
-          } else {
-            items.forEach(function(i) { 
-              i.style.display == "block"
-            })
-            msnry.layout();
-          }
-        })
-       })
+      
     </script>
+    <script src="../assets/scripts/animate.js"></script> 
     <script src="../assets/scripts/smoothscroll.js" defer></script>
   </body>
 </html>
